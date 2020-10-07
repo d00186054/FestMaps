@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_map"
+        android:icon="@drawable/ic_place_black"
+        android:title="▲" />
+
+    <item
+        android:id="@+id/nav_stage_line_up"
+        android:icon="@drawable/ic_artist_black"
+        android:title="▲"/>
+
+    <item
+        android:id="@+id/nav_weather"
+        android:icon="@drawable/ic_wb_weather_black"
+        android:title="▲"/>
+
+    <item
+        android:id="@+id/nav_news"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="▲"/>
+
+    <item
+        android:id="@+id/nav_info"
+        android:icon="@drawable/ic_info"
+        android:title="▲"/>
+
+</menu>

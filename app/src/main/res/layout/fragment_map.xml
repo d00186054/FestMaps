@@ -1,0 +1,114 @@
+
+<com.example.androidrealtimelocation2020.MapWrapperLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/mapNearBy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <toan.android.floatingactionmenu.FloatingActionsMenu
+            android:id="@+id/floating_menu"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_addButtonColorNormal="#40000000"
+            app:fab_addButtonColorPressed="#40000000"
+            app:fab_addButtonPlusIconColor="@color/white"
+            app:fab_labelStyle="@style/custom_fab"
+            android:layout_alignParentRight="true"
+            app:fab_menuIcon="@drawable/iconcamping"
+            app:fab_animationScroll="none"
+            android:layout_marginBottom="50dp"
+            >
+
+
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/water"
+                android:id="@+id/fab_action_water"
+                app:fab_title="Water Marker"
+                ></toan.android.floatingactionmenu.FloatingActionButton>
+
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/toilet2"
+                android:id="@+id/fab_action_toilet"
+                app:fab_title="Toilet Marker"
+                ></toan.android.floatingactionmenu.FloatingActionButton>
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/stage"
+                android:id="@+id/fab_action_stage"
+                app:fab_title="Stage Marker"
+                ></toan.android.floatingactionmenu.FloatingActionButton>
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/food"
+                android:id="@+id/fab_action_food"
+                app:fab_title="Food Marker"
+                ></toan.android.floatingactionmenu.FloatingActionButton>
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/iconcamping"
+                android:id="@+id/fab_action_tent"
+                app:fab_title="Tent Marker"
+                ></toan.android.floatingactionmenu.FloatingActionButton>
+
+
+        </toan.android.floatingactionmenu.FloatingActionsMenu>
+
+        <Button
+            android:id="@+id/setTentLocation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="550dp"
+
+
+
+            android:background="@drawable/roundedbutton"
+            android:text="Set Marker to Currnet Location"
+            android:textColor="@color/white"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+
+</com.example.androidrealtimelocation2020.MapWrapperLayout>

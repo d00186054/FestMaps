@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <fragment
+        android:id="@+id/mapNearBy"
+        android:name="com.appolica.interactiveinfowindow.fragment.MapInfoWindowFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_addButtonColorNormal="@color/pink"
+            app:fab_addButtonColorPressed="@color/pink_pressed"
+            app:fab_addButtonPlusIconColor="@color/white"
+            app:fab_labelStyle="@style/custom_fab"
+            android:layout_alignParentRight="true">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/water"
+                android:id="@+id/fab_action_water"
+                app:fab_title="Water Marker"
+                ></com.getbase.floatingactionbutton.FloatingActionButton>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/toilet2"
+                android:id="@+id/fab_action_toilet"
+                app:fab_title="Toilet Marker"
+                ></com.getbase.floatingactionbutton.FloatingActionButton>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/stage"
+                android:id="@+id/fab_action_stage"
+                app:fab_title="Stage Marker"
+                ></com.getbase.floatingactionbutton.FloatingActionButton>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/food"
+                android:id="@+id/fab_action_food"
+                app:fab_title="Food Marker"
+                ></com.getbase.floatingactionbutton.FloatingActionButton>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+        </RelativeLayout>
+    </fragment>
+
+
+
+
+    <Button
+        android:id="@+id/setTentLocation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Set Tent Location"
+        app:layout_constraintBottom_toBottomOf="@id/mapNearBy"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

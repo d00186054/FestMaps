@@ -1,0 +1,2 @@
+rootProject.name='AndroidRealtimeLocation2020'
+include ':app'
